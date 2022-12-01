@@ -335,6 +335,50 @@
   }
 }
 
+.video-fashion {
+  background-color: $bg;
+  background-image: url('../images/decor/pattern-bg.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 125px 0;
+  &__inner{
+    display: flex;
+  }
+  &__popup{
+    margin-right: 60px;
+    max-width: 530px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__content{
+    max-width: 570px;
+  }
+  &__subtitle{
+    color: $accent;
+    text-transform: uppercase;
+    padding-top: 75px;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  &__title{
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  &__text{
+    margin-bottom: 55px;
+  }
+  &__link{
+    @extend %btn;
+  }
+}
+
 
 
 
