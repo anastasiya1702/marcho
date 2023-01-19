@@ -1,0 +1,67 @@
+.comments-form {
+  &__title {
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      background-color: $accent;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__rating {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__rating-title {
+    color: $title;
+    margin-right: 60px;
+  }
+  &__label {
+    margin-right: 25px;
+  }
+  &__input {
+    @extend %radio-hidden;
+    &:checked+.comments-form__radio {
+      path {
+        fill: #ffc35b;
+      }
+    }
+  }
+  &__radio {
+    cursor: pointer;
+    path {
+      fill: $default;
+    }
+  }
+  &__box-input {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text-input {
+    width: 570px;
+    padding: 20px 14px;
+    border: 1px solid #f0f0f0;
+    display: inline-block;
+  }
+  &__textarea {
+    padding: 15px 20px;
+    display: block;
+    height: 225px;
+    border: 1px solid #f0f0f0;
+    width: 100%;
+    margin-bottom: 40px;
+    resize: none;
+  }
+  &__btn {
+    @extend %btn;
+  }
+}
