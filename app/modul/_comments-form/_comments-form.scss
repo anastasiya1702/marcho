@@ -65,3 +65,36 @@
     @extend %btn;
   }
 }
+
+@media (max-width: 1200px) {
+  .comments-form{
+    &__text-input{
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .comments-form{
+    &__box-input{
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    &__text-input{
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    &__label{
+      display: block;
+      margin-right: 0;
+    }
+    &__rating-title{
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    &__rating {
+      display: block;
+    }
+  }
+}

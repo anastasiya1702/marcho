@@ -184,3 +184,20 @@
     margin: 0 auto;
   }
 }
+
+
+@media (max-width: 860px) {
+  .related__items{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .ralated{
+    padding: 25px 0 50px;
+  }
+  .related__items{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
