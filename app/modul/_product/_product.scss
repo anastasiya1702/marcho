@@ -13,6 +13,10 @@
     padding: 12px 25px;
     display: inline-block;
     margin-top: 55px;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0 5px 25px 0 rgba(254, 62, 87, 0.35);
+    } 
   }
 }
 .product-item {

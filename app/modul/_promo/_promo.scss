@@ -45,6 +45,9 @@
     padding: 14px 27px;
     margin-top: 55px;
     display: inline-block;
+    &:hover{
+      box-shadow: 0 5px 25px 0 rgba(254, 62, 87, 0.35);
+    }
   }
 }
 
